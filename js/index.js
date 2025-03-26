@@ -1,7 +1,7 @@
 // this is js code for dynamic text only
 
 
-    const texts = ["I am your Web developer.", "I am your all-in-one solution."];
+    const texts = ["I am Web developer.", "I am your all-in-one solution."];
     let count = 0;
     let index = 0;
     let currentText = '';
