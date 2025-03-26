@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- addtional css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-EXAMPLE-INTEGRITY-CHECK" crossorigin="anonymous" />
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Responsive Navbar</title>
+</head>
+
+<body class="light-theme">
+    <header id="navbar" class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo-png.png" alt="Logo" style="height: 50px;">
+                </a>
+                <!-- Toggler/collapsible Button -->
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#about">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#expertise">Expertise</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#contact-us">Contact us</a>
+                        </li>
+
+                    </ul>
+                    <!-- Social icons -->
+                    <div class="d-flex">
+                        <a href="https://facebook.com" class="nav-link text-white"><i class="bi bi-facebook"></i></a>
+                        <a href="https://api.whatsapp.com/send" class="nav-link text-white"><i
+                                class="bi bi-whatsapp"></i></a>
+                        <a href="https://linkedin.com" class="nav-link text-white"><i class="bi bi-linkedin"></i></a>
+                        <a href="mailto:email@example.com" class="nav-link text-white"><i
+                                class="bi bi-envelope-fill"></i></a>
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header is ending here  -->
+
+
+    <section id="about" class="banner">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Right Column for Image -->
+                <div class="col-md-5 dev-img-container order-1 order-md-2">
+                    <img src="img/ZOjit5LwJ39fb4ttxw8P.webp" alt="Muhammad Ayub" class="img-fluid">
+                </div>
+                <!-- Left Column for Text -->
+                <div class="col-md-7 order-2 order-md-1">
+                    <div class="text-center text-md-start"> <!-- Add classes for text alignment -->
+                        <span style="background-color: #387ebd;" class="text-white p-2 rounded">2+ years of
+                            experience</span>
+                        <h1 class="text-white mt-4">Hey, I am Mehtab Altaf</h1>
+                        <h2 style="color: #387ebd;" class=" mb-4" id="dynamic-text">I am your Web developer.</h2>
+                        <p class="text-white">Mehtab Altaf is a seasoned Web developer known for delivering
+                            cutting-edge solutions that drive business success. With a profound expertise in modern
+                            technologies and a creative approach to problem-solving, he has consistently excelled in
+                            crafting software that enhances user experience and operational efficiency.</p>
+                        <button class="btn btn-outline-light mt-3">HIRE ME NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- here we starting our client section -->
+    <!-- Separator -->
+    <hr style="border-top: 1px solid #666;">
+    <section class="our-clients">
+        <div class="container-fluid">
+            <h2 class="text-center text-white mb-4">Our Clients</h2>
+            <div style="     background-image: linear-gradient(45deg, #051f36, #132d44, #325f85, #386082, transparent);"
+                id="clientCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Logos -->
+                    <div class="carousel-item active">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-2 d-flex justify-content-center">
+                                <a href="https://www.rentanyroom.com" target="_blank"><img
+                                        src="https://www.rentanyroom.com/wp-content/uploads/2024/02/footerimage.svg"
+                                        class="img-fluid" alt="Client 1"></a>
+                            </div>
+                            <div class="col-2 d-flex justify-content-center">
+                                <a href="https://www.domymalaga.com" target="_blank"><img
+                                        src="https://domymalaga.com/wp-content/uploads/2023/11/logo-domy.png"
+                                        class="img-fluid" alt="Client 2"></a>
+                            </div>
+                            <div class="col-2 d-flex justify-content-center">
+                                <a href="https://www.brokenbow.com" target="_blank"><img
+                                        src="https://brokenbow.com/wp-content/uploads/2023/10/broken-bow-new-logo.png"
+                                        class="img-fluid" alt="Client 3"></a>
+                            </div>
+                            <div class="col-2 d-flex justify-content-center">
+                                <a href="https://www.zenbench.io" target="_blank"><img
+                                        src="https://homey.webpenter.com/wp-content/uploads/2024/04/63684fabc891ecd3cd730859_Transparent-Logo2.png"
+                                        class="img-fluid" alt="Client 4"></a>
+                            </div>
+                            <div class="col-2 d-flex justify-content-center">
+                                <a href="https://www.1stopchiro.com" target="_blank"><img width="100"
+                                        src="https://api.1stopchiro.com/storage/settings/February2021/PazmWqtrZJaOUvqsEeRW.png"
+                                        class="img-fluid" alt="Client 5"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more carousel items as needed -->
+                </div>
+                <!-- Carousel Controls -->
+                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#clientCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button> -->
+                <!-- <button class="carousel-control-next" type="button" data-bs-target="#clientCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button> -->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- expertise section is starting from here -->
+    <!-- Separator -->
+    <hr style="border-top: 1px solid #666;">
+    <section id="expertise" class="expertise mt-4">
+        <div class="container">
+            <h2 class="text-center text-white mb-4">My Expertise</h2>
+            <div class="row">
+                <!-- PHP -->
+                <div class="col-md-4">
+                    <h3 class="text-white"><i class="fab fa-php"></i> PHP</h3>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90"
+                            aria-valuemin="0" aria-valuemax="100">90%</div>
+                    </div>
+                </div>
+             <!-- JavaScript -->
+             <div class="col-md-4">
+                <h3 class="text-white"><i class="fab fa-js-square"></i> JavaScript</h3>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="90"
+                        aria-valuemin="0" aria-valuemax="100">70%</div>
+                </div>
+            </div>
+                <!-- WordPress -->
+                <div class="col-md-4">
+                    <h3 class="text-white"><i class="fab fa-wordpress"></i> WordPress</h3>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
+                            aria-valuemin="0" aria-valuemax="100">85%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <!-- Angular -->
+                <div class="col-md-4">
+                    <h3 class="text-white"><i class="fab fa-angular"></i> Angular</h3>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">75%</div>
+                    </div>
+                </div>
+                <!-- React Native -->
+                <div class="col-md-4">
+                    <h3 class="text-white"><i class="fa-solid fa-mobile"></i> App Development</h3>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80"
+                            aria-valuemin="0" aria-valuemax="100">80%</div>
+                    </div>
+                </div>
+                <!-- DevOps -->
+                <div class="col-md-4">
+                    <h3 class="text-white"><i class="fas fa-tools"></i> DevOps</h3>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
+                            aria-valuemin="0" aria-valuemax="100">85%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <!-- API Development/Integration -->
+                <div class="col-md-4">
+                    <h3 class="text-white"><i class="fas fa-code"></i> API Development</h3>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90"
+                            aria-valuemin="0" aria-valuemax="100">90%</div>
+                    </div>
+                </div>
+                <!-- GitHub -->
+                <div class="col-md-4">
+                    <h3 class="text-white"><i class="fab fa-github"></i> GitHub</h3>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90"
+                            aria-valuemin="0" aria-valuemax="100">90%</div>
+                    </div>
+                </div>
+                <!-- Jira -->
+                <div class="col-md-4">
+                    <h3 class="text-white"><i class="fab fa-jira"></i> Jira</h3>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90"
+                            aria-valuemin="0" aria-valuemax="100">90%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise section ending here -->
+
+    <!-- Knowledge section -->
+    <!-- <section class="knowledges mt-5">
+    <div class="container">
+        <h2 class="text-center  text-white mb-4">Knowledges</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <div class="knowledge-item card bg-dark text-white border-primary mb-3">
+                    <div class="card-body">
+                        <h3 class="card-title text-white"><i class="fas fa-comments"></i> Communication Skills</h3>
+                        <p class="card-text">Effective communication is crucial for collaborating with team members, understanding client requirements, and presenting ideas clearly.</p>
+                    </div>
+                </div>
+                <div class="knowledge-item card bg-dark text-white border-primary mb-3">
+                    <div class="card-body">
+                        <h3 class="card-title text-white"><i class="fas fa-clock"></i> Time Management</h3>
+                        <p class="card-text">Managing time efficiently ensures timely delivery of projects, prioritizing tasks effectively, and meeting deadlines consistently.</p>
+                    </div>
+                </div>
+                <div class="knowledge-item card bg-dark text-white border-primary mb-3">
+                    <div class="card-body">
+                        <h3 class="card-title text-white"><i class="fas fa-lightbulb"></i> Problem-Solving</h3>
+                        <p class="card-text">Strong problem-solving skills enable developers to identify issues, analyze root causes, and implement effective solutions.</p>
+                    </div>
+                </div>
+                <div class="knowledge-item card bg-dark text-white border-primary mb-3">
+                    <div class="card-body">
+                        <h3 class="card-title text-white"><i class="fas fa-search"></i> Attention to Detail</h3>
+                        <p class="card-text">Paying attention to detail helps in writing clean and maintainable code, identifying bugs, and ensuring high-quality software development.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="knowledge-item card bg-dark text-white border-primary mb-3">
+                    <div class="card-body">
+                        <h3 class="card-title text-white"><i class="fas fa-exchange-alt"></i> Adaptability</h3>
+                        <p class="card-text">Being adaptable allows developers to quickly learn new technologies, adjust to changing project requirements, and thrive in dynamic environments.</p>
+                    </div>
+                </div>
+                <div class="knowledge-item card bg-dark text-white border-primary mb-3">
+                    <div class="card-body">
+                        <h3 class="card-title text-white"><i class="fas fa-paint-brush"></i> UI/UX</h3>
+                        <p class="card-text">Understanding UI/UX principles helps in designing intuitive user interfaces, enhancing user experience, and creating visually appealing applications.</p>
+                    </div>
+                </div>
+                <div class="knowledge-item card bg-dark text-white border-primary mb-3">
+                    <div class="card-body">
+                        <h3 class="card-title text-white"><i class="fab fa-git-alt"></i> Version Control (e.g., Git)</h3>
+                        <p class="card-text">Proficiency in version control systems like Git enables developers to manage codebase efficiently, collaborate with team members, and track changes effectively.</p>
+                    </div>
+                </div>
+                <div class="knowledge-item card bg-dark text-white border-primary mb-3">
+                    <div class="card-body">
+                        <h3 class="card-title text-white"><i class="fas fa-graduation-cap"></i> Continuous Learning</h3>
+                        <p class="card-text">Embracing a mindset of continuous learning allows developers to stay updated with latest technologies, trends, and best practices in the industry.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+    <!-- section 2 for knowledge -->
+    <!-- Separator -->
+    <hr style="border-top: 1px solid #666;">
+    <!-- Knowledge Section -->
+    <section class="knowledges mt-5">
+        <div class="container">
+            <h2 class="text-center text-white mb-4">Knowledges</h2>
+            <div class="row justify-content-center align-items-center">
+                <!-- Communication Skills -->
+                <div class="col-md-3 mb-3">
+                    <button class="knowledge-btn"><i class="fas fa-comments"></i> Communication Skills</button>
+                </div>
+                <!-- Time Management -->
+                <div class="col-md-3 mb-3">
+                    <button class="knowledge-btn"><i class="fas fa-clock"></i> Time Management</button>
+                </div>
+                <!-- Flexibility -->
+                <div class="col-md-3 mb-3">
+                    <button class="knowledge-btn"><i class="fas fa-expand-alt"></i> Flexibility</button>
+                </div>
+                <!-- UI/UX -->
+                <div class="col-md-3 mb-3">
+                    <button class="knowledge-btn"><i class="fas fa-paint-brush"></i> UI/UX</button>
+                </div>
+                <!-- Problem-Solving -->
+                <div class="col-md-3 mb-3">
+                    <button class="knowledge-btn"><i class="fas fa-lightbulb"></i> Problem-Solving</button>
+                </div>
+                <!-- Adaptability -->
+                <div class="col-md-3 mb-3">
+                    <button class="knowledge-btn"><i class="fas fa-exchange-alt"></i> Adaptability</button>
+                </div>
+                <!-- Continuous Learning -->
+                <div class="col-md-3 mb-3">
+                    <button class="knowledge-btn"><i class="fas fa-graduation-cap"></i> Continuous Learning</button>
+                </div>
+                <!-- Version Control -->
+                <div class="col-md-3 mb-3">
+                    <button class="knowledge-btn"><i class="fab fa-git-alt"></i> Version Control</button>
+                </div>
+                <!-- Debugging -->
+                <div class="col-md-3 mb-3">
+                    <button class="knowledge-btn"><i class="fas fa-bug"></i> Debugging</button>
+                </div>
+                <!-- Collaboration -->
+                <div class="col-md-3 mb-3">
+                    <button class="knowledge-btn"><i class="fas fa-users"></i> Collaboration</button>
+                </div>
+                <!-- Project Management -->
+                <div class="col-md-3 mb-3">
+                    <button class="knowledge-btn"><i class="fas fa-tasks"></i> Project Management</button>
+                </div>
+                <!-- Performance Optimization -->
+                <div class="col-md-3 mb-3">
+                    <button class="knowledge-btn"><i class="fas fa-chart-line"></i> Performance Optimization</button>
+                </div>
+                <!-- Add more buttons here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- this is a FAQ Section -->
+
+    <section class="faqs">
+        <h2 class="text-center mt-4 text-white ">You Probably Have Questions
+        </h2>
+        <p class="faqs-p text-white width-50">
+            Undergo the following frequently asked questions to obtain any info concerning various aspects of our
+            company, products,
+            and services. For queries not included here, feel free to contact us.
+        </p>
+
+        <div class="container mt-5">
+
+            <div id="faqAccordion" class="row my-row">
+                <div class="card col-12 col-md-6">
+                    <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        <h5 class="mb-0">
+                            <button class="btn nav-link text-dark">
+                                Why outsource software engineers from webpenter?
+                            </button>
+                            <span class="plus-icon">+</span>
+                        </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            If you hire programmers from us, you get the following perks:
+                            <li>Get access to a vast pool of skilled specialists
+                            </li>
+                            <li>Affordable software development
+                            </li>
+                            <li>Rapid product delivery
+                            </li>
+                            <li>
+                                Bespoke development
+
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-12 col-md-6">
+                    <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">
+                        <h5 class="mb-0">
+                            <button class="btn nav-link text-dark collapsed">
+                                What types of projects have you developed in the past?
+                            </button>
+                            <span class="plus-icon">+</span>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            <p>We have developed a range of projects, such as:</p>
+                            <ul>
+                                <li>Health care apps</li>
+                                <li>Websites</li>
+                                <li>Marketplaces</li>
+                                <li>CRMs</li>
+                                <li>ERP solutions</li>
+                                <li>LMSs</li>
+                                <li>Project management tools</li>
+                                <li>Human resource management systems</li>
+                                <li>and much more.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-12 col-md-6">
+                    <div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree"
+                        aria-expanded="false" aria-controls="collapseThree">
+                        <h5 class="mb-0">
+                            <button class="btn nav-link text-dark collapsed">
+                                
+                                Does the hourly rate apply to full-time resources?
+                            
+                            </button>
+                            <span class="plus-icon">+</span>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            In webpenter, different models are available. Resources can be hired full-time, part-time, hourly, or on a project. Based on your chosen model, you pay for the resources.
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-12 col-md-6">
+                    <div class="card-header" id="headingfour" data-toggle="collapse" data-target="#collapseThree"
+                        aria-expanded="false" aria-controls="collapseThree">
+                        <h5 class="mb-0">
+                            <button class="btn nav-link text-dark collapsed">
+                                My full-time resource will only be working for me, correct?
+                            </button>
+                            <span class="plus-icon">+</span>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingfour" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Yes, that is correct. Dedicated development is what we offer.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+    <!-- contact us section here -->
+    <!-- Separator -->
+    <hr style="border-top: 1px solid #666;">
+    <section id="contact-us" class="contact-us mt-5">
+        <div class="container">
+            <div class="row mt-4 justify-content-between align-items-center">
+                <!-- Left Side -->
+                <div class="col-md-4">
+                    <div class="contact-buttons">
+                        <!-- WhatsApp -->
+                        <a href="https://api.whatsapp.com/send" class="btn btn-success mb-3 d-block" target="_blank">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Contact
+                        </a>
+                        <!-- LinkedIn -->
+                        <a href="https://linkedin.com" style="background-color: #00b9c5;"
+                            class="btn text-white linkedin-btn mb-3 d-block" target="_blank">
+                            <i class="fab fa-linkedin"></i> LinkedIn Profile
+                        </a>
+                        <!-- Facebook -->
+                        <a href="https://facebook.com" class="btn btn-primary mb-3 d-block" target="_blank">
+                            <i class="fab fa-facebook"></i> Facebook Page
+                        </a>
+                    </div>
+                </div>
+                <!-- Right Side -->
+                <div class="col-md-7">
+                    <div class="contact-form text-center">
+                        <h2 class="text-white text-center mb-4">Contact Us</h2>
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="fullName" required placeholder="Full Name">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="email" required
+                                    placeholder="Email Address">
+                            </div>
+                            <div class="mb-3">
+                                <textarea style="height: 220px;" class="form-control" id="message" rows="3" cols="5"
+                                    placeholder="Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-outline-light">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- this is Last Footer section -->
+
+
+    <footer class="footer text-white pt-3">
+        <div class="container text-center">
+            <div class="mb-3">
+                <a href="https://twitter.com/" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/" class="text-white"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="mb-3">
+                <a href="#contact" class="btn btn-outline-light">Get in Touch</a>
+            </div>
+            <hr class="mb-0">
+            <div>
+                <p class="m-0">© 2024 Webpenter LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!-- Bootstrap JS with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

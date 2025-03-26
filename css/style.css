@@ -1,0 +1,210 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #051f36, black);
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+header {
+    background: linear-gradient(to right, #051f36, black);
+
+}
+
+.banner {
+    padding: 50px 0;
+    /* Add padding for spacing */
+    background-color: transparent;
+    /* Light grey background, you can customize it */
+}
+
+
+/* Ensures the image is fully responsive and covers the column space */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    /* border: 9px solid #387ebd; */
+}
+
+.dev-img-container {
+    background-image: radial-gradient(#2c699e, #2d465a, #356b9a);
+    border: 5px solid white;
+}
+
+
+
+/* Adjust carousel controls position */
+.carousel-control-prev,
+.carousel-control-next {
+    width: auto;
+}
+
+/* Center carousel controls vertically */
+.carousel-control-prev,
+.carousel-control-next {
+    align-items: center;
+}
+
+/* Style carousel controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Adjust spacing between carousel items */
+.carousel-item .col-2 {
+    padding: 0 5px;
+    /* Adjust as needed */
+}
+
+
+
+
+
+
+
+.progress {
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    background-color: #387ebd !important;
+    color: #fff;
+}
+
+.expertise i {
+    color: white !important;
+}
+
+/* 
+sticky header */
+
+/* Sticky header */
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: transparent;
+    /* Initial background color */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for background color change */
+}
+
+.sticky-top.navbar-bg {
+    background-color: black;
+    /* Background color when sticky */
+}
+
+/* Active link styling */
+.navbar-nav .nav-link.active {
+    color: #ffc107 !important;
+    /* Active link color */
+    border-bottom: 2px solid #ffc107;
+    /* Bottom border for active link */
+}
+
+.linkedin-btn:hover {
+    background-color: #3d9df0 !important;
+}
+
+
+.footer {
+    background-image: linear-gradient(45deg, #051f36, #132d44, #325f85, #386082, transparent);
+    margin-top: 44px;
+    padding: 45px 0 6px 0 !important;
+}
+
+
+@media screen and (max-width: 426px) {
+    .dev-img-container {
+        background-image: none !important;
+        border: none !important;
+        margin-bottom: 20px !important;
+    }
+
+    .my-row{
+        display: block !important;
+        padding: 20px !important;
+
+    }
+}
+
+
+
+
+
+
+
+
+.knowledge-btn {
+    background-color: #333;
+    /* Button background color */
+    color: white;
+    /* Button text color */
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    /* Adjust padding as needed */
+    margin: 5px;
+    cursor: pointer;
+    width: 100%;
+    /* Set button width to 100% */
+    text-align: left;
+    /* Align text to the left */
+    overflow: hidden;
+    /* Hide overflow text */
+    white-space: nowrap;
+    /* Prevent text wrapping */
+    text-overflow: ellipsis;
+    /* Add ellipsis for overflow text */
+    transition: background-color 0.3s ease;
+}
+
+.knowledge-btn:hover {
+    background-color: #555;
+    /* Button background color on hover */
+}
+
+
+
+/* css for faqs section */
+
+
+.card {
+
+    margin-bottom: 15px;
+}
+/* .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+} */
+.card-header button {
+    width: 90%;
+    text-align: left;
+}
+.card-header h5{
+    display: flex;
+}
+.plus-icon {
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-left: auto; /* Pushes the plus icon to the right */
+}
+.row .card {
+    flex: 0 0 48%;
+    margin-right: 2%;
+}
+.row .card:nth-child(2n) {
+    margin-right: 0;
+}
+
+.faqs-p{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+/* faqs css ends here */
